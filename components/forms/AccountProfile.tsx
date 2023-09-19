@@ -34,10 +34,10 @@ const AccountProfile = ({user, btnTitle}) => {
     const form = useForm({
         resolver: zodResolver(UserValidation),
         defaultValues: {
-            profile_photo: '',
-            name: '',
-            username: '',
-            bio: ''
+            profile_photo: user?.image || '',
+            name: user?.name || '',
+            username: user?.username || '',
+            bio: user?.bio || ''
         }
     })
 
@@ -100,10 +100,9 @@ const AccountProfile = ({user, btnTitle}) => {
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem className='flex items-center gap-4'>
+            <FormItem className='flex w-full flex-col gap-3'>
               <FormLabel className='text-base-semibold text-light-2'>
                 Name
-
               </FormLabel>
               
               <FormControl className='flex-1 text-base-semibold text-gray-200'>
@@ -121,7 +120,7 @@ const AccountProfile = ({user, btnTitle}) => {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem className='flex items-center gap-4'>
+            <FormItem className='flex w-full flex-col gap-3'>
               <FormLabel className='text-base-semibold text-light-2'>
                 Username
 
@@ -142,7 +141,7 @@ const AccountProfile = ({user, btnTitle}) => {
           control={form.control}
           name="bio"
           render={({ field }) => (
-            <FormItem className='flex items-center gap-4'>
+            <FormItem className='flex w-full flex-col gap-3'>
               <FormLabel className='text-base-semibold text-light-2'>
                 Bio
 
