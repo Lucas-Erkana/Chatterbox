@@ -32,7 +32,6 @@
 Chatterbox is a comprehensive text-based conversation app that allows users to connect with others and engage in conversations on a variety of topics. With Chatterbox, you can join public conversations or create your own private chat rooms to discuss anything you like. The app is designed to be easy to use and customizable, with a range of features that allow you to personalize your experience.
 
 ### App Screenshot
-![chatterbox](https://github.com/Lucas-Erkana/chatterbox/assets/41428579/554c2346-ab62-46f9-a623-c1602ae708ed)
 
 ## Live Demo
 
