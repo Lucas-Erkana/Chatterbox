@@ -1,4 +1,3 @@
-"use client"
 import AccountProfile from "@/components/forms/AccountProfile";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
